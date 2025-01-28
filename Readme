@@ -19,47 +19,45 @@ sarathi7777-milk-quality-prediction/ ├── data.pkl # Pre-trained model file
 ## Installation and Usage
 
 ### Prerequisites
+
 - Python 3.8 or higher
 - Docker (optional, for containerized deployment)
 
-### Clone the Repository
+1. Clone the Repository
 
     ```bash
     git clone https://github.com/Sarathi7777/milk-quality-prediction.git
     cd milk-quality-prediction
 
-    Install Dependencies
+2. Install Dependencies
 
     Use pip to install the required packages:
 
     ```bash
-
     pip install -r requirements.txt
 
-    Run the Application
+3. Run the Application
     Run the Streamlit app:
 
     ```bash
-
     streamlit run ml2.py
 
     Deployment Using Docker
     
     Build and run the application using Docker:
 
-    Build the Docker image:
+4. Build the Docker image:
     
     ```bash
-
     docker build -t milk-quality-prediction .
 
-    Run the Docker container:
-    ```bash
+5. Run the Docker container:
 
+    ```bash
     docker run -p 8501:8501 milk-quality-prediction
     Access the app at http://localhost:8501.
 
-    Input Parameters:
+### Input Parameters:
 
         pH: Acidity or alkalinity of the milk.
         Temperature: Temperature of the milk.
@@ -69,12 +67,12 @@ sarathi7777-milk-quality-prediction/ ├── data.pkl # Pre-trained model file
         Turbidity: Turbidity level of the milk.
         Colour: Colour level of the milk.
 
-    How It Works:
+### How It Works:
         Users input the values for the milk parameters.
         The app uses a logistic regression model to calculate the probability of the milk being "Good".
         If the probability > 0.5, the app indicates that the milk is "Good"; otherwise, it is "Bad".
 
-    Technologies Used:
+### Technologies Used:
 
         Python
         Streamlit
@@ -89,11 +87,11 @@ sarathi7777-milk-quality-prediction/ ├── data.pkl # Pre-trained model file
         gunicorn
         scikit-learn==1.2.2
 
-License
+### License
 
 This project is licensed under the MIT License.
 
-Author
+### Author
 [Sarathi] (sarathiff777@gmail.com)
 Sarathi7777 GitHub: Sarathi7777 
 
