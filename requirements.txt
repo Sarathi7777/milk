@@ -1,0 +1,7 @@
+Flask
+pandas
+numpy
+matplotlib
+streamlit
+gunicorn
+scikit-learn==1.2.2

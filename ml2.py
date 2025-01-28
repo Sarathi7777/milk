@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import numpy as np
 model=pickle.load(open('data.pkl','rb'))
-
 def predict(pH,Temprature,Taste,Odor,Fat,Turbidity,Colour):
     input=np.array([[pH,Temprature,Taste,Odor,Fat,Turbidity,Colour]]).astype(np.float64)
     prediction=model.predict_proba(input)
